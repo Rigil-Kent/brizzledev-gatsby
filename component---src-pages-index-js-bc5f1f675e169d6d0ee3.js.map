@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-index-js-bc5f1f675e169d6d0ee3.js","mappings":"sMAEe,SAASA,IACtB,OAAO","sources":["webpack://gatsby-starter-hello-world/./src/pages/index.js"],"sourcesContent":["import React from \"react\"\n\nexport default function Home() {\n  return <div>www.brizzle.dev</div>\n}\n"],"names":["Home"],"sourceRoot":""}
