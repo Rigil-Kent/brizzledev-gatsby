@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: "/brizzledev-gatsby",
   /* Your site config here */
   plugins: [],
 }
