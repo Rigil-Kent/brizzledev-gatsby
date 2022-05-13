@@ -1,0 +1,23 @@
+name: Gatsby Environment Vars
+
+on:
+  push:
+    branches: [main, gh-pages]
+
+jobs:
+  brizzledev-deploy:
+    runs-on: [windows-latest, ubuntu-latest]
+
+    step:
+      - name: Set environment variables
+        env:
+          GATSBY_ACCESS_TOKEN: ${{ secrets.GATSBY_ACCESS_TOKEN }}
+          GATSBY_SPACE_ID: ${{ GATSBY_SPACE_ID }}
+
+      - name: checkout code
+        uses: actions/checkout@v2.3.1
+
+      - name: install node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '13.x'

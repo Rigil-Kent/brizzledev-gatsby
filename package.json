@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "brizzledev-portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A Gatsby-based web portfolio",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -15,7 +15,10 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "contentful": "^9.1.28",
     "gatsby": "^4.13.1",
+    "gatsby-plugin-image": "^2.14.1",
+    "gatsby-source-contentful": "^7.12.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },

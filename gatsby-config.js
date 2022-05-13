@@ -7,5 +7,16 @@
 module.exports = {
   pathPrefix: "/brizzledev-gatsby",
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: `brizzledev-gatsby`,
+    siteUrl: `https://portfolio.brizzle.dev`
+  },
+  plugins: [{
+    resolve: 'gatsby-source-contentful',
+    options: {
+      "accessToken": process.env.GATSBY_ACCESS_TOKEN,
+      "spaceId": process.env.GATSBY_SPACE_ID
+    }
+  },"gatsby-plugin-image"
+],
 }
