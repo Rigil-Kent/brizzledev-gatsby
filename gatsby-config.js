@@ -14,9 +14,11 @@ module.exports = {
   plugins: [{
     resolve: 'gatsby-source-contentful',
     options: {
-      "accessToken": process.env.GATSBY_ACCESS_TOKEN,
-      "spaceId": process.env.GATSBY_SPACE_ID
+      'accessToken': process.env.GATSBY_ACCESS_TOKEN,
+      'spaceId': process.env.GATSBY_SPACE_ID
     }
-  },"gatsby-plugin-image"
+  },
+  'gatsby-plugin-image',
+  'gatsby-plugin-sass'
 ],
 }

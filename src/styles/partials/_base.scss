@@ -1,0 +1,27 @@
+.layout {
+    color: $gray;
+    font-family: $ff-s;
+    line-height: 1.6;
+    background: $white;
+    height: 100%;
+    font-size: .875rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: $accent;
+    line-height: 1;
+    font-size: 3.125rem;
+}
+
+h2 {
+    @include sans-serif($fs: 2rem, $color: $dark-gray);
+} 

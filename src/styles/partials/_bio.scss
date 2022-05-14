@@ -1,0 +1,47 @@
+.bio {
+    @include container;
+    @include clearfix;
+
+    margin-top: 3em;
+}
+
+.bio-image {
+    // max-height: 25em;
+
+    @media (min-width: 42em) {
+        float: left;
+        margin-right: 1em;
+    }
+}
+
+.bio-title {
+    margin-bottom: .25em;
+}
+
+.bio-subtitle {
+    margin: 0.5em 0;
+}
+
+
+@supports(display: grid) {
+    .bio {
+        display: grid;
+        grid-template-columns: [port-start] minmax(5em, 1fr) [name-start] minmax(5em, 1fr) [img-end] 2fr [port-end];
+    }
+
+    .bio-image {
+        grid-column: port-start / img-end;
+        grid-row: 1 / 2;
+    }
+
+    .bio-title {
+        grid-column: name / port;
+        grid-row: 1 / 2;
+        align-self: end;
+    }
+
+    .bio-subtitle, 
+    .bio-text {
+        grid-column: port / port;
+    }
+}

@@ -1,6 +1,11 @@
 import { Link, useStaticQuery, graphql } from "gatsby";
 import React from "react";
+import Bio from "../components/Bio";
+import Contact from "../components/Contact";
+import Hero from "../components/Hero";
 import Layout from "../components/Layout";
+import Portfolio from "../components/Portfolio";
+import Intro from "../components/Intro";
 import * as styles from "../styles/index.module.css";
 
 
@@ -17,6 +22,7 @@ export default function Index() {
 
   return (
     <Layout>
+      {/* <Konami />
       <section className={styles.header}>
         <div>
           <h2>{ data.contentfulSiteInfo.mainHeading }</h2>
@@ -27,7 +33,13 @@ export default function Index() {
         <div>
           <img src="banner.png" style={ {maxWidth: '100%'} } alt="site banner"></img>
         </div>
-      </section>
+      </section> */}
+
+        <Hero />
+        <Intro />
+        <Bio />
+        <Portfolio />
+        <Contact />
     </Layout>
   );
 }
