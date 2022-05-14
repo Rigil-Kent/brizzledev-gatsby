@@ -17,7 +17,7 @@ export default function Portfolio() {
             </figure>
             
             {/* portfolio item 2 */}
-            <figure className='portfolio-item featured'>
+            <figure className='portfolio-item'>
                 <img src='portfolio-02.jpg' alt='portfolio item' />
                 <figcaption className=''>
                     <h2 className='portfolio-title'>Project Name</h2>
@@ -27,7 +27,7 @@ export default function Portfolio() {
             </figure>
 
             {/* portfolio item 3 */}
-            <figure className='portfolio-item featured'>
+            <figure className='portfolio-item'>
                 <img src='portfolio-03.jpg' alt='portfolio item' />
                 <figcaption className=''>
                     <h2 className='portfolio-title'>Project Name</h2>
@@ -37,7 +37,7 @@ export default function Portfolio() {
             </figure>
 
             {/* portfolio item 4 */}
-            <figure className='portfolio-item featured'>
+            <figure className='portfolio-item'>
                 <img src='portfolio-04.jpg' alt='portfolio item' />
                 <figcaption className=''>
                     <h2 className='portfolio-title'>Project Name</h2>
@@ -47,7 +47,7 @@ export default function Portfolio() {
             </figure>
 
             {/* portfolio item 5 */}
-            <figure className='portfolio-item featured'>
+            <figure className='portfolio-item'>
                 <img src='portfolio-05.jpg' alt='portfolio item' />
                 <figcaption className=''>
                     <h2 className='portfolio-title'>Project Name</h2>
