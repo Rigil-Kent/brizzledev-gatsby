@@ -10,13 +10,21 @@
     h1 {
         font-size: 1.5rem;
         font-weight: $fw-normal;
-        color: $dark-blue;
+        color: $dark-green;
         line-height: 2;
         text-align: center;
 
+        @include mq {
+            font-size: 3rem;
+        }
+
         span {
             display: block;
-            @include sans-serif($fs: 5.5rem, $color: $accent);
+            @include sans-serif($fs: 5.5rem, $color: $accent-green);
+
+            @include mq {
+                font-size: 8vw;
+            }
         }
 
         &::before,
@@ -25,7 +33,7 @@
             display: block;
             width: 80%;
             height: 1px;
-            background: $dark-blue;
+            background: $dark-green;
         }
 
         &::before {

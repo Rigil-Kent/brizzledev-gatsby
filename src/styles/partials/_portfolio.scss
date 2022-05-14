@@ -22,8 +22,8 @@
         right: 0;
         left: 0;
         padding: 2em;
-        background-color: $accent;
-        background: rgba($accent, .75);
+        background-color: $accent-green;
+        background: rgba($accent-green, .75);
         color: $white;
         text-align: left;
         display: flex;
@@ -72,6 +72,10 @@
     .portfolio-items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
+        @include mq {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 
     .portfolio-item.featured {

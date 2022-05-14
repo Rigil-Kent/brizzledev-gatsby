@@ -5,19 +5,19 @@ export default function Contact() {
     <section className='contact'>
         <h1>Get In Touch</h1>
         <form action=''>
-            <label className='contact-name' for='name'>Name:
+            <label className='name' for='name'>Name:
                 <input type='text' id='name' />
             </label>
             
-            <label className='' for='email:'>Email:
-                <input type='text' id='email' />
+            <label className='email' for='email:'>Email:
+                <input type='email' id='email' />
             </label>
 
-            <label message='message'>Message:
-                <textarea name='' id='message' className=''></textarea>
+            <label className='message'>Message:
+                <textarea name='message' id='message'></textarea>
             </label>
 
-            <input class="contact-btn" type="submit" value="Send"></input>
+            <input class="contact-btn form-button" type="submit" value="Send"></input>
         </form>
     </section>
   )

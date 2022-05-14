@@ -22,7 +22,7 @@
 }
 
 .intro-middle {
-    background: $dark-blue;
+    background: $dark-green;
     padding: 2.5em 2vw;
     text-align: center;
     display: flex;
@@ -32,8 +32,21 @@
 
 .intro-left img,
 .intro-right img {
+    position: relative;
     object-fit: cover;
     min-height: 100%;
     min-width: 100%;
     display: block;
+    background-blend-mode: lighten;
+    
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba($accent-green, .5);
+    }
 }

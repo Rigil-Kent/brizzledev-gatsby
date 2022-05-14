@@ -1,4 +1,3 @@
-import { Link, useStaticQuery, graphql } from "gatsby";
 import React from "react";
 import Bio from "../components/Bio";
 import Contact from "../components/Contact";
@@ -10,15 +9,6 @@ import * as styles from "../styles/index.module.css";
 
 
 export default function Index() {
-
-  const data = useStaticQuery(graphql`
-  query SiteInfo {
-    contentfulSiteInfo {
-      mainHeading
-      tagLine
-    }
-  }
-  `);
 
   return (
     <Layout>

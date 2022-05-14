@@ -7,7 +7,7 @@
 }
 
 .bio-image {
-    // max-height: 25em;
+    max-height: 25em;
 
     @media (min-width: 42em) {
         float: left;
@@ -28,11 +28,16 @@
     .bio {
         display: grid;
         grid-template-columns: [port-start] minmax(5em, 1fr) [name-start] minmax(5em, 1fr) [img-end] 2fr [port-end];
+        gap: .5em
     }
 
     .bio-image {
         grid-column: port-start / img-end;
         grid-row: 1 / 2;
+
+        @include mq {
+            grid-row: 1 / 4;
+        }
     }
 
     .bio-title {
@@ -44,5 +49,17 @@
     .bio-subtitle, 
     .bio-text {
         grid-column: port / port;
+
+        @include mq {
+            grid-column: image-end / port-end;
+        }
+    }
+
+    .bio-subtitle {
+        grid-row: 2 / 3;
+    }
+
+    .bio-text {
+        grid-row: 3 / 4;
     }
 }
