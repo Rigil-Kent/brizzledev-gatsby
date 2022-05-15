@@ -2,14 +2,14 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <section className='contact'>
+    <section id='contact' className='contact'>
         <h1>Get In Touch</h1>
         <form action=''>
-            <label className='name' for='name'>Name:
+            <label className='name' htmlFor='name'>Name:
                 <input type='text' id='name' />
             </label>
             
-            <label className='email' for='email:'>Email:
+            <label className='email' htmlFor='email:'>Email:
                 <input type='email' id='email' />
             </label>
 
@@ -17,7 +17,7 @@ export default function Contact() {
                 <textarea name='message' id='message'></textarea>
             </label>
 
-            <input class="contact-btn form-button" type="submit" value="Send"></input>
+            <input className="contact-btn form-button" type="submit" value="Send"></input>
         </form>
     </section>
   )

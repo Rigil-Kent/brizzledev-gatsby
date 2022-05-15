@@ -92,3 +92,102 @@
         }
     }
 }
+
+.portfolio-modal {
+    position: fixed;
+    z-index: 10;
+    top: 2em;
+    bottom: 2em;
+    left: 2em;
+    right: 2em;
+    background: $white;
+    box-shadow: 0 0 0 3em rgba($color: #000000, $alpha: .7);
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    display: none;
+
+    &.is-open {
+        display: block;
+    }
+}
+
+.modal-close {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    background: $white;
+    border: 0;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rbga(black, .7);
+    padding: 4px 0 0;
+    cursor: pointer;
+}
+
+.portfolio-header {
+    text-align: left;
+    padding: 5em 0;
+    margin-bottom: 2em;
+}
+
+.portfolio-header:nth-of-type(1) {
+    background-image: url(../../static/portfolio-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-title-box {
+    background: rgba($accent-green, .75);
+    padding: 3em 0 3em 3em;
+    color: $white;
+    width: 70%;
+
+    .portfolio-title {
+        font-size: 3rem;
+        display: inline-block;
+
+        &::after {
+            content: '';
+            display: block;
+            height: 1px;
+            margin: .5em 0;
+            background: $white;
+            width: 100%;
+        }
+    }
+}
+
+.portfolio-subtitle {
+    font-size: 1rem;
+}
+
+.portfolio-content {
+    text-align: left;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+.portfolio-img-full {
+    width: 100vw;
+    max-width: initial;
+    margin: 0 calc(50% - 50vw);
+    height: 20vh;
+    object-fit: cover;
+}
+
+@include mq {
+    .portfolio-img-left {
+        width: 65%;
+        float: left;
+        margin-right: 2em;
+    }
+
+    .portfolio-img-right {
+        width: 65%;
+        float: right;
+        margin-left: 2em;
+    }
+}

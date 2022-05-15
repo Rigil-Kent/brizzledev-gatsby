@@ -25,11 +25,13 @@ export default function Index() {
         </div>
       </section> */}
 
-        <Hero />
-        <Intro />
-        <Bio />
-        <Portfolio />
-        <Contact />
+        <div className="container-all">
+          <Hero />
+          <Intro />
+          <Bio />
+          <Portfolio />
+          <Contact />
+        </div>
     </Layout>
   );
 }

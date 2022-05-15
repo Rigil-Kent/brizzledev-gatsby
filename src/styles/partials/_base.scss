@@ -11,6 +11,10 @@
     }
 }
 
+body {
+    overflow-x: hidden;
+}
+
 img {
     max-width: 100%;
 }
@@ -37,3 +41,7 @@ h2 {
         font-size: 3rem;
     }
 } 
+
+.st0 {
+    fill: #223843
+}
