@@ -1,0 +1,28 @@
+.konami {
+    position: fixed;
+    background: rgba(black, .7);
+    z-index: 10;
+    top: 2em;
+    bottom: 2em;
+    left: 2em;
+    right: 2em;
+    box-shadow: 0 0 0 3em rgba(black, .7);
+    
+
+    display: none;
+
+    &.is-open {
+        display: block;
+    }
+
+    .keyentry {
+        display: flex;
+        justify-content: space-between;
+        padding: 11em 2em;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
