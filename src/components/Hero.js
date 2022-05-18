@@ -1,17 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useStaticQuery, graphql } from "gatsby";
 
 
 
-export default function Hero({ props }) {
-
-
-    // const toggleNav = () => {
-    //     // useEffect( () => {} )
-    // }
+export default function Hero() {
 
     const data = useStaticQuery(graphql`
-    query SiteInfo {
+    query HeroInfo {
       contentfulSiteInfo {
         mainHeading
         tagLine

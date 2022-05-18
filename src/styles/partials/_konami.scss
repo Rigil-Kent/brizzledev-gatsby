@@ -1,12 +1,12 @@
 .konami {
     position: fixed;
-    background: rgba(black, .7);
+    background: rgba(black, 1);
     z-index: 10;
     top: 2em;
     bottom: 2em;
     left: 2em;
     right: 2em;
-    box-shadow: 0 0 0 3em rgba(black, .7);
+    box-shadow: 0 0 0 3em rgba(black, 1);
     
 
     display: none;
@@ -21,8 +21,15 @@
         padding: 11em 2em;
 
         img {
+            position: relative;
             display: block;
             width: 100%;
+            // background: linear-gradient(0deg, black, #444444);
+            opacity: 30%;
+
+            &.selected {
+                opacity: 100%;
+            }
         }
     }
 }

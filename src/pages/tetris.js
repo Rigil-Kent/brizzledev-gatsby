@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-export default function About() {
+export default function Tetris() {
   return ( 
       <Layout>
-          <div>About Bryan</div>
+          <div>Tetris</div>
       </Layout>
   );
 }
