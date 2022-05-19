@@ -9,8 +9,10 @@ export default function Bio() {
       contentfulSiteInfo {
         mainHeading
         tagLine
-        bio {
-          bio
+        fullbio {
+          childMarkdownRemark {
+            html
+          }
         }
       }
     }
@@ -22,9 +24,7 @@ export default function Bio() {
         <img className='bio-image' src='john-portfolio.png' alt='john portfolio sillhouette shot' />
         <h1 className='bio-title'>{data.contentfulSiteInfo.mainHeading}</h1>
         <h2 className='bio-subtitle'>{data.contentfulSiteInfo.tagLine}</h2>
-        <div className='bio-text'>
-            { data.contentfulSiteInfo.bio.bio }
-        </div>
+        <div className='bio-text' dangerouslySetInnerHTML={ {__html: data.contentfulSiteInfo.fullbio.childMarkdownRemark.html} }></div>
     </section>
   )
 }

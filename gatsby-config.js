@@ -19,6 +19,7 @@ module.exports = {
     }
   },
   'gatsby-plugin-image',
-  'gatsby-plugin-sass'
+  'gatsby-plugin-sass',
+  `gatsby-transformer-remark`
 ],
 }
