@@ -13,8 +13,8 @@ export default function Konami() {
         let pressed = {}
 
         const handleKeystrokes = (event) => {
-            let konami_div = event.target.lastChild.firstChild
-            let keyImages = konami_div.firstChild.childNodes
+            let konami_div = event.target?.lastChild?.firstChild
+            let keyImages = konami_div?.firstChild?.childNodes
 
 
             if (konami_div === null) return
@@ -22,9 +22,11 @@ export default function Konami() {
 
             pressed[event.key] = true
 
-            if (event.key === '`') konami_div.classList.add('is-open')
-
-            document.body.style.overflowY = 'hidden'
+            if (event.key === '`') {
+                console.log('Code entry')
+                konami_div.classList.add('is-open')
+                document.body.style.overflowY = 'hidden'
+            }
 
 
             if (pressed['`']) {

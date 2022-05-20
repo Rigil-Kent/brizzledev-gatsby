@@ -69,3 +69,14 @@ input, textarea {
     @include sans-serif($fs: 2.5rem, $color: $white);
     padding: .5em 1.5em;
 }
+
+.thanks {
+    visibility: hidden;
+    transition: top ease-in-out 250ms;
+}
+
+
+@keyframes thanksFadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0;}
+}

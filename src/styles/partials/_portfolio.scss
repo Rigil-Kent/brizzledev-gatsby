@@ -174,8 +174,9 @@
     width: 100vw;
     max-width: initial;
     margin: 0 calc(50% - 50vw);
-    height: 20vh;
+    height: 40vh;
     object-fit: cover;
+    padding: 2em 0;
 }
 
 @include mq {

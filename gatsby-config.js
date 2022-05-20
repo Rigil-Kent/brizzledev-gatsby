@@ -20,6 +20,7 @@ module.exports = {
   },
   'gatsby-plugin-image',
   'gatsby-plugin-sass',
+  'gatsby-plugin-recaptcha',
   `gatsby-transformer-remark`
 ],
 }

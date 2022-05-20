@@ -32,7 +32,7 @@ export default function Portfolio() {
                             const modal = e.nativeEvent.explicitOriginalTarget.parentNode.nextSibling
                             modal.style.animation = 'modalFadeOut 500ms forwards'
                         }
-                    }}>
+                    }} aria-hidden='true'>
             {/* portfolio item 1 */}
             <figure className='portfolio-item featured'>
                 <img src='portfolio-01.jpg' alt='portfolio item' />
