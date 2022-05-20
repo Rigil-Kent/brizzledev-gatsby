@@ -13,6 +13,10 @@ export default function Bio() {
             html
           }
         }
+        avatar {
+          url
+          description
+        }
       }
     }
     `);
@@ -20,7 +24,7 @@ export default function Bio() {
 
   return (
     <section id='about' className='bio'>
-        <img className='bio-image' src='headshot.jpg' alt='bryan portfolio shot' />
+        <img className='bio-image' src={data.contentfulSiteInfo.avatar.url} alt={data.contentfulSiteInfo.avatar.description} title={data.contentfulSiteInfo.avatar.description}/>
         <h1 className='bio-title'>{data.contentfulSiteInfo.mainHeading}</h1>
         <h2 className='bio-subtitle'>{data.contentfulSiteInfo.tagLine}</h2>
         <div className='bio-text' dangerouslySetInnerHTML={ {__html: data.contentfulSiteInfo.fullbio.childMarkdownRemark.html} }></div>
