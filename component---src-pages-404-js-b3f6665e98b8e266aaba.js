@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkbrizzledev_portfolio=self.webpackChunkbrizzledev_portfolio||[]).push([[883],{429:function(e,t,n){n.r(t),n.d(t,{default:function(){return r}});var l=n(7294);function r(){return l.createElement("div",null,l.createElement("h2",null,"404"),l.createElement("p",null,"This page does not exist"))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-b3f6665e98b8e266aaba.js.map
