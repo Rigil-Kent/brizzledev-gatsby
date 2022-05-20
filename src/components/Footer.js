@@ -23,8 +23,8 @@ export default function Footer() {
         { data
           .allContentfulSocialLinks
           .nodes
-          .map(link => (
-                <a className='footer-social-icon' href={link.url} title={link.name} alt={link.name} target='_blank' rel='noreferrer'><img src={link.icon.url} alt={link.name} /></a>
+          .map((link, index) => (
+                <a key={index} className='footer-social-icon' href={link.url} title={link.name} alt={link.name} target='_blank' rel='noreferrer'><img src={link.icon.url} alt={link.name} /></a>
             )) 
         }
       </div>

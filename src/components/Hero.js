@@ -47,7 +47,7 @@ export default function Hero() {
                 ></path>
             </svg>
         </button>
-        <h1>{ data.contentfulSiteInfo.mainHeading }<span>{ data.contentfulSiteInfo.tagLine }</span></h1>
+        <h1>{ data.contentfulSiteInfo.mainHeading }<span className='spin'>{ data.contentfulSiteInfo.tagLine }</span></h1>
     </div>
   )
 }
